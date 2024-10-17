@@ -11,8 +11,8 @@ Before starting the setup, review the configuration file [config.conf](./config.
 One key setting is `USE_GPU`. Set this to `true` if you have Nvidia GPUs available and wish to take advantage of their capabilities. 
 
 ### Disk Space Requirements
-- **Default Setup** (without GPU): The setup will require approximately **5.5 GB** of disk space.
-- **With GPU Support** (`USE_GPU=true`): An additional **10 GB** will be required, bringing the total to around **15.5 GB**.
+- Default Setup (without GPU): The setup will require approximately **5.5 GB** of disk space.
+- With GPU Support (`USE_GPU=true`): An additional **10 GB** will be required, bringing the total to around **15.5 GB**.
 
 ### Host setup
 #### ``docker`` install
