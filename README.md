@@ -3,7 +3,7 @@ This repository demonstrates how to set up a [llama.cpp](https://github.com/gger
 
 ## Setup
 These instructions assume the server's host machine runs a Debian-based system, such as Ubuntu.
-The setup will require some trust from the repository owner, especially when using Nvidia GPUs, as some custom bash scripts need to run with `sudo` privileges. This ensures a convenient and quick setup.
+The setup requires running custom bash scripts with `sudo` privileges, especially when using Nvidia GPUs, to ensure a convenient and quick setup.
 
 ### Configuration
 Before starting the setup, review the configuration file [config.conf](./config.conf). This file contains default values optimized for a quick test of the `llama.cpp` server's capabilities. For more advanced use, such as deploying a larger model, you can easily modify the configuration.
@@ -85,7 +85,7 @@ You can check if the server is running locally on your machine:
 ```sh
 sudo ./scripts/is_server_running_locally.sh
 ```
-During the startup process, it is possible that the script may return false for a few seconds; however, everything is still okay. If you suspect there are errors during the server startup, check the log files in the `./logs` folder.
+During the startup process, it is possible that the script may return false for a few seconds; however, everything is still okay. If you suspect there are errors during the server startup, check the log files in `./logs`.
 
 ## Client call
 Once the server is running, you can try it out by giving it some tasks with a client call:
