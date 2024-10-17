@@ -2,9 +2,17 @@
 This repository demonstrates how to set up a [llama.cpp](https://github.com/ggerganov/llama.cpp) server and call it using a Python client for translation purposes. The goal of this repository is to provide a minimal working example of a ``llama.cpp`` server/client pair.
 
 ## Setup
-The following setup instructions assume the server's host machine runs a Debian-based system, such as Ubuntu.
+These instructions assume the server's host machine runs a Debian-based system, such as Ubuntu.
+The setup will require some trust from the repository owner, especially when using Nvidia GPUs, as some custom bash scripts need to run with `sudo` privileges. This ensures a convenient and quick setup.
 
-Before starting the setup, review the configuration file [config.conf](./config.conf). It provides default values optimized for a quick test of the llama.cpp server's capabilities. For more serious usage, you can easily reconfigure the file by specifying a better model. An important setting is `USE_GPU`. Set this to true if you have Nvidia GPUs and want to leverage their capabilities. The setup will require some trust from the repository owner, especially when using Nvidia GPUs, as some custom bash scripts need to run with `sudo` privileges. This ensures a convenient and quick setup.
+### Configuration
+Before starting the setup, review the configuration file [config.conf](./config.conf). This file contains default values optimized for a quick test of the `llama.cpp` server's capabilities. For more advanced use, such as deploying a larger model, you can easily modify the configuration.
+
+One key setting is `USE_GPU`. Set this to `true` if you have Nvidia GPUs available and wish to take advantage of their capabilities. 
+
+### Disk Space Requirements
+- **Default Setup** (without GPU): The setup will require approximately **5.5 GB** of disk space.
+- **With GPU Support** (`USE_GPU=true`): An additional **10 GB** will be required, bringing the total to around **15.5 GB**.
 
 ### Host setup
 #### ``docker`` install
