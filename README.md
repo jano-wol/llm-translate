@@ -1,5 +1,5 @@
 # llm_translate
-This repository demonstrates how to set up a [llama.cpp](https://github.com/ggerganov/llama.cpp) server and call it using a Python client for translation purposes. The goal of this repository is to provide a minimal working example of a ``llama.cpp`` server/client pair.
+This repository demonstrates how to set up a [llama.cpp](https://github.com/ggerganov/llama.cpp) server and call it using a Python client for translation purposes. The goal is to provide a minimal working example of a ``llama.cpp`` server/client pair.
 
 ## Setup
 These instructions assume the server's host machine runs a Debian-based system, such as Ubuntu.
